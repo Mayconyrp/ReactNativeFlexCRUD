@@ -1,0 +1,33 @@
+/* Tabela responsiva */
+.table-responsive {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Tabela estilo Vaticano */
+.vatican-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.vatican-table th,
+.vatican-table td {
+    border: 1px solid #ffd52d;
+    padding: 8px;
+    text-align: left;
+}
+
+.vatican-table th {
+    background-color: #fbf020;
+    color: #000000;
+}
+
+.vatican-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.vatican-table tbody tr:hover {
+    background-color: #fff763;
+}

@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+/* font-family: 'Alkatra', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+:root {
+    --main-bg-color: #AD2365;
+}
+
+/* background-color: var(--main-bg-color);  */
+
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    display: block;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: #b3b3b3 3px 4px 10px;
+    z-index: 1;
+    height: 550px;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: #b3b3b3 3px 4px 10px;
+    z-index: 1;
+}
+
+.imputs {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.input-container {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container2 {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-input {
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    transition: all .3s;
+    color: rgb(227, 23, 23);
+    border: 1px solid #AD2365;
+    background: white;
+}
+
+.text-input:focus {
+    border: 1px solid lawngreen;
+}
+
+.text-input::placeholder {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.forgotpassword {
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.texto-cadastro {
+    color: #b3b3b3;
+}
+
+.btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    width: 70%;
+    height: 40px;
+    box-shadow: #b3b3b3 3px 4px 5px;
+}
+
+.junte-se {
+    color: #b3b3b3;
+    text-decoration: none;
+
+}
+
+span {
+    color: lawngreen;
+}
+
+.cont_folhas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25%;
+}
+
+.folhas {
+    width: 350px;
+}
+
+.folhas_rotate {
+    transform: scaleX(-1);
+    transform: scale(-1);
+
+    margin-top: -280px;
+}
+
+.folhas_esquerda {
+    margin-top: -280px;
+
+}
+
+.folhas_opacidade {
+    opacity: 40%;
+}
+
+.index0 {
+    z-index: 0;
+}
+
+a.ancora {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+a.ancora-listar {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+a.ancora-listar:hover {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+
+
+@media(max-width: 991px) {
+
+    .folhas {
+        display: none;
+    }
+
+    input {
+        width: 45px;
+        color: royalblue;
+        padding: 5px;
+    }
+
+    .card,
+    .card2 {
+        width: 100vh;
+        padding: 15px;
+    }
+
+   /* .input-container {
+        
+    }
+*/
+    a.ancora {
+        background-color: #AD2365;
+        text-decoration: none;
+        color: white;
+    }
+
+    a.ancora-listar {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    a.ancora-listar:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+}@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+/* font-family: 'Alkatra', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+:root {
+    --main-bg-color: #AD2365;
+}
+
+/* background-color: var(--main-bg-color);  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bg {
+    display: block;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: #b3b3b3 3px 4px 10px;
+    z-index: 1;
+    height: 550px;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: #b3b3b3 3px 4px 10px;
+    z-index: 1;
+}
+
+.imputs {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.input-container {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container2 {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-input {
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    transition: all .3s;
+    color: black;
+    border: 1px solid #f6ff00;
+    background: white;
+}
+
+.text-input:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.text-input::placeholder {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.forgotpassword {
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.texto-cadastro {
+    color: #b3b3b3;
+}
+
+.btn {
+    background-color: #000000;
+    color: #000000(255, 255, 255);
+    border: none;
+    padding: 10px;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    width: 70%;
+    height: 40px;
+    box-shadow: #b3b3b3 3px 4px 5px;
+}
+
+.junte-se {
+    color: #b3b3b3;
+    text-decoration: none;
+
+}
+
+span {
+    color: #000000;
+}
+
+.cont_folhas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25%;
+}
+
+.folhas {
+    width: 350px;
+}
+
+.folhas_rotate {
+    transform: scaleX(-1);
+    transform: scale(-1);
+
+    margin-top: -280px;
+}
+
+.folhas_esquerda {
+    margin-top: -280px;
+
+}
+
+.folhas_opacidade {
+    opacity: 40%;
+}
+
+.index0 {
+    z-index: 0;
+}
+
+a.ancora {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+a.ancora-listar {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+a.ancora-listar:hover {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+
+
+@media(max-width: 991px) {
+
+    .folhas {
+        display: none;
+    }
+
+    input {
+        width: 45px;
+        color: royalblue;
+        padding: 5px;
+    }
+
+    .card,
+    .card2 {
+        width: 100vh;
+        padding: 15px;
+    }
+
+   /* .input-container {
+        
+    }
+*/
+a.ancora {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+    a.ancora-listar {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    a.ancora-listar:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+}
