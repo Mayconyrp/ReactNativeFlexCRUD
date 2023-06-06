@@ -3,12 +3,16 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 
 const Home = ({ navigation }) => {
   const handleCadastroPress = () => {
+    console.log('Botão de Cadastro pressionado');
     navigation.navigate('Cadastro');
   };
 
   const handleListarPress = () => {
+    console.log('Botão de Listar pressionado');
     navigation.navigate('Listar');
   };
+
+  console.log('Renderizando a tela Home');
 
   return (
     <View style={styles.container}>

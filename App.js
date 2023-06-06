@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import Home from './Home';
-import CadastroForm from './CadastroForm';
-import Listar from './Listar';
+import Home from './src/pages/Home';
+import CadastroForm  from './src/pages/CadastroForm';
+import Listar from './src/pages/Listar'
 
 
 const Stack = createStackNavigator();

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Text, Image } from 'react-native';
-import axios from 'axios';
+import { cadastrarDepoimento } from '../api/cadastrarApi';
 import { useNavigation } from '@react-navigation/native';
 
 const CadastroForm = () => {
@@ -18,10 +18,11 @@ const CadastroForm = () => {
             depoimento: depoimento,
         };
 
-        axios
-            .post('http://localhost:8080/enviardados', formData)
+        console.log('Enviando dados:', formData);
+
+        cadastrarDepoimento(formData)
             .then(response => {
-                console.log('Dados enviados:', response.data);
+                console.log('Dados enviados com sucesso:', response);
                 setMensagem('Dados enviados com sucesso!');
             })
             .catch(error => {
@@ -31,6 +32,7 @@ const CadastroForm = () => {
     };
 
     const navigateToAnotherPage = () => {
+        console.log('Navegando para outra página...');
         navigation.navigate('Listar');
     };
 
@@ -38,7 +40,7 @@ const CadastroForm = () => {
         <View style={styles.container}>
             <Image
                 style={styles.logo}
-                source={require('./assets/cidade-do-vaticano.png')}
+                source={require('../assets/cidade-do-vaticano.png')}
                 resizeMode="contain"
             />
             <TextInput
