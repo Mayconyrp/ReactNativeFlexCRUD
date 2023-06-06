@@ -6,7 +6,6 @@ import Home from './src/pages/Home';
 import CadastroForm  from './src/pages/CadastroForm';
 import Listar from './src/pages/Listar'
 
-
 const Stack = createStackNavigator();
 
 

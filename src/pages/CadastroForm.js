@@ -20,10 +20,23 @@ const CadastroForm = () => {
 
         console.log('Enviando dados:', formData);
 
+        if (!validateFields(formData)) {
+            setMensagem('Todos os campos são obrigatórios');
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            setMensagem('Por favor, insira um endereço de email válido');
+            return;
+        }
+
         cadastrarDepoimento(formData)
             .then(response => {
                 console.log('Dados enviados com sucesso:', response);
                 setMensagem('Dados enviados com sucesso!');
+                setNome('');
+                setEmail('');
+                setDepoimento('');
             })
             .catch(error => {
                 console.error('Erro ao enviar os dados:', error);
@@ -34,6 +47,15 @@ const CadastroForm = () => {
     const navigateToAnotherPage = () => {
         console.log('Navegando para outra página...');
         navigation.navigate('Listar');
+    };
+
+    const validateFields = (formData) => {
+        return Object.values(formData).every(value => value !== '');
+    };
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
     };
 
     return (
@@ -68,7 +90,6 @@ const CadastroForm = () => {
         </View>
     );
 };
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,

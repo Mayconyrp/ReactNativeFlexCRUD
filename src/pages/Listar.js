@@ -6,6 +6,7 @@ import {
     TouchableOpacity,
     Modal,
     TextInput,
+    Alert
 } from 'react-native';
 import {
     listarDepoimentos,
@@ -42,6 +43,11 @@ const DepoimentosScreen = () => {
     };
 
     const handleUpdateDepoimento = async () => {
+        if (!editedNome || !editedDepoimentoText) {
+            console.error('Nome e depoimento são campos obrigatórios');
+            return;
+        }
+    
         try {
             await atualizarDepoimento(
                 editedDepoimento.id,
@@ -53,12 +59,13 @@ const DepoimentosScreen = () => {
             setEditedNome('');
             setEditedDepoimentoText('');
             setRefreshKey((prevKey) => prevKey + 1);
+            console.log('Dados atualizados com sucesso');
+            Alert.alert('Sucesso', 'Dados atualizados com sucesso');
         } catch (error) {
             console.error('Erro ao atualizar depoimento:', error);
         }
     };
-
-    const handleDeleteDepoimento = async (id) => {
+        const handleDeleteDepoimento = async (id) => {
         try {
             await excluirDepoimento(id);
             setRefreshKey((prevKey) => prevKey + 1);

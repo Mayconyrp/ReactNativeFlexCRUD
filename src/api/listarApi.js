@@ -13,7 +13,7 @@ export const listarDepoimentos = async () => {
 
 export const atualizarDepoimento = async (id, nome, depoimento) => {
     try {
-        await axios.put(`${BASE_URL}/depoimentos/update/${id}`, { nome, depoimento });
+        await axios.put(`${BASE_URL}/depoimento/editar/${id}`, { nome, depoimento });
     } catch (error) {
         console.error('Erro ao atualizar depoimento:', error);
         throw error;
@@ -22,7 +22,7 @@ export const atualizarDepoimento = async (id, nome, depoimento) => {
 
 export const excluirDepoimento = async (id) => {
     try {
-        await axios.delete(`${BASE_URL}/depoimentos/delete/${id}`);
+        await axios.delete(`${BASE_URL}/depoimento/${id}`);
     } catch (error) {
         console.error('Erro ao excluir depoimento:', error);
         throw error;
